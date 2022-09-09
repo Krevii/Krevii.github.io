@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #101014;
     background-image: url(./resource/background.png);
     /* font-family: 'Roboto', sans-serif; */
@@ -61,14 +61,15 @@ main{
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    height: 60vh;
+    height: 90%;
     width: 100%;
 }
 .titleText{
     text-align: left;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    width: 70%;
+    width: 80%;
+    margin-top: 40px;
     font-size: 3rem;
 }
 .titleB{
@@ -113,8 +114,8 @@ main{
 }
 .card:hover{
     transform: scale(1.03);
-    border: 1px solid #f4f1d0;
-    box-shadow: 0px 0px 20px 7px rgba(71, 104, 129, 0.3);
+    border: 1px solid white;
+    box-shadow: 0px 0px 15px 5px rgba(84,122,52,1);
     position: relative;
 }
 .gradientimg{
@@ -137,6 +138,7 @@ main{
 }
 .contentText p{
     margin: 0px 30px;
+    padding: 20px 0px;
     font-size: 1.8rem;
 }
 footer{
@@ -148,4 +150,32 @@ footer{
 }
 footer p{
     margin: 30px 0px;
+}
+@media all and (max-width: 950px) {
+    .titleText{
+        font-size: 2rem;
+    }
+    .card{
+        
+        width: calc(100% / 2.1);
+        
+    }
+    header{
+        width: 100vw;
+    }
+    main{
+        width: 100vw;
+    }
+    footer{
+        width: 100vw;
+    }
+    .cardsContainer{
+        justify-content: space-around;
+    }
+    .titleText{
+        margin-left: 10px;
+    }
+    .titleB{
+        margin-left: 10px;
+    }
 }
