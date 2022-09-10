@@ -10,6 +10,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    
+
     background-color: #101014;
     background-image: url(./resource/background.png);
     /* font-family: 'Roboto', sans-serif; */
@@ -30,6 +32,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    width: 60%;
     margin: 15px;
 }
 .logo{
@@ -39,17 +42,26 @@ nav{
     filter: invert();
 }
 .navB{
-    margin: 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* padding: 0px 10px; */
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.3rem;
+    lighting-color: transparent;
     font-family: 'Roboto', sans-serif;
     color:#9ba0b3;
-    transition: all ease 0.4s;
-
+    width: 100%;
+    height: 80px;
+    
+    
+    transition: all ease 0.2s;
 }
 .navB:hover{
     color: #f4f1d0;
+    background-color: #101014;
 }
 main{
     display: flex;
@@ -85,12 +97,18 @@ main{
     color: #9ba0b3;
     border: 1px solid transparent;
 }
+.projectCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
 .cardNav{
     display: flex;
     margin: 30px 0px;
     justify-content: space-around;
     align-items: center;
-    padding: 10px;
+    width: 100%;
     background-color:#16171d;
     border-radius: 10px;
 
@@ -110,17 +128,23 @@ main{
     width: calc(100% / 3.1);
     margin: 10px 0px;
     border: 1px solid transparent;
-    transition: all ease 0.4s;
+    transition: all ease 0.2s;
 }
 .card:hover{
     transform: scale(1.03);
-    border: 1px solid white;
-    box-shadow: 0px 0px 15px 5px rgba(84,122,52,1);
+    border: 1px solid  white;
+    box-shadow: 0px 0px 15px 5px #1F51FF;
+
     position: relative;
+}
+.contentImg{
+    width: 100%;
+    height: 50%;
 }
 .gradientimg{
     height: 100%;
     width: 100%;
+    object-fit: cover;
     border-radius: 10px 10px 0px 0px;
     background: linear-gradient(45deg, rgba(84,122,52,1) 25%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 50%, rgba(84,122,52,1) 50%, rgba(84,122,52,1) 75%, rgba(255,255,255,1) 75%);
 
@@ -151,13 +175,13 @@ footer{
 footer p{
     margin: 30px 0px;
 }
-@media all and (max-width: 950px) {
+@media all and (max-width: 1135px) {
     .titleText{
         font-size: 2rem;
     }
     .card{
         
-        width: calc(100% / 2.1);
+        width: calc(100% / 2.1  );
         
     }
     header{
@@ -169,25 +193,44 @@ footer p{
     footer{
         width: 100vw;
     }
+    footer p{
+        margin: 30px;
+    }
     .cardsContainer{
         justify-content: space-around;
     }
     .titleText{
-        margin-left: 10px;
+        margin-left: 20px;
     }
     .titleB{
-        margin-left: 10px;
+        margin-left: 20px;
+    }
+    .logo {
+        margin: 20px;
+    }
+    .cardNavB{
+        text-align: center;
     }
 }
 
-@media all and (max-width: 620px){
+@media all and (max-width: 660px){
+    .cardNav{
+        flex-direction: column;
+        width: 100%;
+    }
     .cardNavB{
         font-size: 1rem;
     }
 }
-@media all and (max-width: 490px){
+@media all and (max-width: 530px){
+    .cardNav{
+        width: 100%;
+    }
     .cardNavB{
         font-size: 0.7rem;
+    }
+    .navB{
+        font-size: 1rem;
     }
     .card{
         
