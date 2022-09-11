@@ -4,17 +4,21 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
+body{
+    background-image: url(/resource/background.png);
+}
 .container{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    
     background-color: #101014;
     background-image: url(/resource/background.png);
     /* font-family: 'Roboto', sans-serif; */
     font-family: 'Roboto Condensed', sans-serif;
     color: #f4f1d0;
+    
     /* color: #9ba0b3; */
     
 }
@@ -167,7 +171,7 @@ footer{
     align-items: flex-end;
     height: 100%;
     width: 75%;   
-    margin-top: 60px;
+    margin-top: 50px;
 }
 footer p{
     margin: 30px 0px;
@@ -230,12 +234,12 @@ textarea{
 .EncryptB{
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
     height: 20%;
     font-size: 24px;
     padding: 10px;
     text-transform: uppercase;
-    text-align: center;
     background-color: #282d3c;
     color: #f69197;
     border: 1px solid transparent;
