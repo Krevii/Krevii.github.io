@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+        <title>IS lab1</title>
+        <link rel="shortcut icon" href="/resource/favicon.png">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <img class="logo" src="/resource/favicon2.png" alt="favicon">
+                <nav>
+                    <a class="navB" href="#">info</a>
+                    <a class="navB" href="#">book</a>
+                    <a class="navB" href="#">store</a>
+                    <a class="navB" href="#">about</a>
+                </nav>
+            </header>
+            <main>
+                <section class="title">
+                    <h3 class="titleText">Задание:</h3>
+                    <p class="textP">Написать программу, которая получает в качестве входной информации некоторый текст (из файла). В программе должен быть реализован некоторый алгоритм шифрования/дешифрования (можно использовать шифрование на основе перестановки/подстановки букв). Программа должна содержать интерфейсные элементы для выбора операции шифрования или дешифрования (кнопки, меню и т.п.). Если выбрана операция "шифрование", то текст из исходного файла (имеющего название input.txt) должен быть зашифрован и сохранен в файл encrypt.txt. Если выбрана операция "дешифрование", то текст из файла encrypt.txt должен быть расшифрован и сохранен в файл decrypt.txt.</p>
+                </section>
+                <hr>
+                <section class="offsetAlign">
+                    <input class="offsetText" placeholder="Enter offset" type="text">
+                </section>
+                <section class="containerAlign">
+                    <section class="encrypt">
+                        <textarea maxlength="1000" placeholder="Enter text..."></textarea>
+                        <a id="EncryptB" class="EncryptB">Encrypt</a>
+                    </section>
+                    <section class="encrypt">
+                        <textarea maxlength="1000" placeholder="Enter encrypt text..."></textarea>
+                        <a id="DecipherB" class="EncryptB">Decipher</a>
+                    </section>
+                </section>
+            </main>
+            <footer>
+                <p>© VADIM BOGATYREV 2022</p>
+            </footer>
+        </div>
+        <script src="./main.js"></script>
+    </body>
+</html>
