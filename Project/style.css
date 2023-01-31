@@ -93,7 +93,7 @@ main{
     width: 100%;
     height: 200%;
     z-index: 0;
-    background:repeat url(/resources/background.png);
+    background:repeat url(./resources/background.png);
     transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
 }
 .intro-header{
