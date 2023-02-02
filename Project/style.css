@@ -35,6 +35,12 @@ header{
     background: linear-gradient(180deg, var(--background-accent-color) 80.33%, rgba(8, 8, 8, 0) 100%);
     position: fixed;
     z-index: 999;
+    transition: all 0.2s ease;
+    
+}
+.header-active{
+    height: 0px;
+    opacity: 0;
 }
 .bone{
     display: flex;
@@ -135,8 +141,8 @@ main{
     color: var(--secondary-color);
     position: relative;
     width: 100%;
-    top: 15vh;
-    transform: translate3d(0px,150vh,0px);
+    top: 10vh;
+    transform: translate3d(0px,100vh,0px);
     transition: all 3.2s cubic-bezier(0.19, 1, 0.22, 1);
 }
 .scroll-block{

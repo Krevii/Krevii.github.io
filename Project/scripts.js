@@ -61,7 +61,7 @@ let animationScroll = ()=>{
     //roadmap scroll
     if ((window.innerHeight / window.innerHeight) + window.scrollY >= (HeaderRoadMap[0].offsetTop - HeaderRoadMap[0].offsetHeight)) {
         // roadMap[0].style = `height: 100vh;`;
-        header.style = "position:relative;"
+        header.classList.add("header-active");
         if (GetScrollDirection(tempScrollY) > 0) {
             sliderScroll[0].style = `transform: translate(${tempScrollY - scrollY}px, ${0}px);`
         }
@@ -71,7 +71,7 @@ let animationScroll = ()=>{
     }
     else{
         tempScrollY = scrollY;
-        header.style = "position:fixed;"
+        header.classList.remove("header-active");
     }
 
 }
@@ -90,7 +90,7 @@ onScroll();
 document.addEventListener("DOMContentLoaded", (e)=>{
 
     window.scrollBy(0,0);
-    scrollTo(0,1000);
+    scrollTo(0,0);
     tempScrollY = scrollY;
     window.addEventListener("scroll", (e)=>{
         onScroll();
