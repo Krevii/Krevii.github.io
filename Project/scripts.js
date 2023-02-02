@@ -38,6 +38,7 @@ let textContain = document.getElementsByClassName("text-contain");
 let HeaderRoadMap = document.getElementsByClassName("header-roadmap");
 let roadMap = document.getElementsByClassName("roadmap");
 let sliderScroll = document.getElementsByClassName("slider");
+let header = document.getElementById("header");
 
 let scrollRoadMap = 0;
 
@@ -60,7 +61,7 @@ let animationScroll = ()=>{
     //roadmap scroll
     if ((window.innerHeight / window.innerHeight) + window.scrollY >= (HeaderRoadMap[0].offsetTop - HeaderRoadMap[0].offsetHeight)) {
         // roadMap[0].style = `height: 100vh;`;
-        console.log(sliderScroll[0].offsetLeft);
+        header.style = "position:relative;"
         if (GetScrollDirection(tempScrollY) > 0) {
             sliderScroll[0].style = `transform: translate(${tempScrollY - scrollY}px, ${0}px);`
         }
@@ -70,6 +71,7 @@ let animationScroll = ()=>{
     }
     else{
         tempScrollY = scrollY;
+        header.style = "position:fixed;"
     }
 
 }

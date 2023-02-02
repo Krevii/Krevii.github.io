@@ -17,7 +17,7 @@
     --accent-color: #ff49c1;
     --secondary-color:#bdfb40;
     --header: 80px;
-    --footer: 200px;
+    --footer: 100vh;
 }
 body{
     display: flex;
@@ -130,12 +130,13 @@ main{
     transform: translate(0px,0px);
 }
 .header-up-text{
-    font-size: 48px;
+    font-size: 1.8rem;
     text-transform: uppercase;
     color: var(--secondary-color);
     position: relative;
-    top: 0vh;
-    transform: translate3d(0px,100vh,0px);
+    width: 100%;
+    top: 15vh;
+    transform: translate3d(0px,150vh,0px);
     transition: all 3.2s cubic-bezier(0.19, 1, 0.22, 1);
 }
 .scroll-block{
@@ -202,11 +203,11 @@ main{
     height: 100%;
 }
 .card-section > h2{
-    font-size: 48px;
+    font-size: 4rem;
     position: relative;
 }
 .card-section > p{
-    font-size: 3rem;
+    font-size: 250%;
     font-weight: 900;
     text-align: center;
     position: relative;
@@ -215,7 +216,7 @@ main{
 
 .roadmap{
     width: 100%;
-    height: 500vh;
+    height: 620vh;
     background-color: var(--secondary-color);
 }
 .header-roadmap{
@@ -249,29 +250,57 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: end;
+    justify-content: space-evenly;
     height: 100%;
     width: 100%;
 }
+
 .slider :nth-child(1){
     justify-content: center;
     margin-left: 10vw;
+    margin-right: 10vw;
     font-size: 5rem;
     font-weight: 900;
 }
-.slider :nth-child(n+3){
+.slider :nth-child(n+2){
     border-left: 1px dashed var(--background-accent-color);
     border-width: 4px;
 }
+.slider :nth-child(n+2) img{
+    height: 30%;
+    width: auto;
+    margin: 0px;
+    border: none;
+}
+.slider :nth-child(n+2) p{
+    margin: 0px;
+    padding: 30px;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+.slider :nth-child(n+2) span{
+    border: none;
+}
+
+
 footer{
     display: flex;
     flex-direction: column;
-
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: var(--footer);
     /*  height: 100vh; */
 
     background-color: var(--background-accent-color);
+}
+
+footer h1{
+    font-size: 4rem;
+    color: var(--secondary-color);
+
 }
 ::-webkit-scrollbar{
     background-color: var(--secondary-color);
