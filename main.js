@@ -6,3 +6,6 @@ card.addEventListener("click", ()=>{
 project.addEventListener("click", ()=>{
     location.href = "Project/index.html";
 })
+project.addEventListener("click", ()=>{
+    location.href = "VirtUPS/index.html";
+})
