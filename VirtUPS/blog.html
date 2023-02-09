@@ -1,39 +1,63 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <link href="./style.css" rel="stylesheet" />
     <link href="./resources/favicon.png" rel="icon" />
 </head>
-<body>
+
+<body style="overflow: hidden;">
     <header id="header">
         <div class="bone">
             <div>
                 <a href="./index.html">
-                    <img class="logoV" src="./resources/Logo-Horizontal.png" alt="logo" />
+                    <img class="logoV" src="./resources/Logo-Vertical.png" alt="logo" />
                 </a>
             </div>
 
             <nav>
-                <a href="./index.html #content" class="nav-item">[ about game ]</a>
-                <a href="./index.html #roadmap" class="nav-item">[ roadmap ]</a>
+                <a href="./index.html#content" class="nav-item">[ about game ]</a>
+                <a href="./index.html#roadmap" class="nav-item">[ roadmap ]</a>
                 <a href="./laba.html" class="nav-item">[ market place ]</a>
                 <a href="./blog.html" class="nav-item">[ blog ]</a>
             </nav>
         </div>
     </header>
     <main>
-        <section>
+        <section class="blog">
+            <div class="overlay">
+                <div class="form">
+                    <form method="post" action="./laba.js" autocomplete="off">
+                        <input name="login" autofocus required placeholder="login">
+                        <input type="password" name="password" required placeholder="password">
+                        <label class="text-h3">some check</label>
+                        <input type="checkbox" value="some check value1" name="some-name">
+                        <label class="text-h3">some check</label>
+                        <input type="checkbox" value="some check value2" name="some-name">
+                        <label class="text-h3">some check</label>
+                        <input type="checkbox" value="some check value3" name="some-name">
 
-        </section>
-        <section>
-            
+                        <input type="submit" value="Войти">
+                        <input type="reset" value="Удалить">
+                    </form>
+
+                    <form method="post" action="./laba.js" autocomplete="off">
+                        <label class="text-h2">Введите ваше предложение по улучению игры</label>
+                        <textarea name="offer" placeholder="Не более 200 символов" maxlength="200" cols="100" rows="10"></textarea>
+                        <input type="submit" value="Отправить">
+                        <input type="reset" value="Удалить">
+                    </form>
+                </div>
+
+            </div>
         </section>
     </main>
     <footer>
-        
+
     </footer>
 </body>
+
 </html>
