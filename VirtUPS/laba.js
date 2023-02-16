@@ -11,9 +11,9 @@ function weekday(year, month, day) {
 		month -= 2;
 	return (day + 31 * month / 12 + year + year / 4 - year / 100 + year / 400) % 7;
 }
-console.log(weekday(2023,2,8));
-console.log(weekday(2023,2,10));
-console.log(weekday(2023,2,11));
+
+let result = prompt("Введиие дату в формате:Год/Месяц/День").split("/");
+alert(`день недели: ${Math.trunc(weekday(result[0],result[1],result[2]))}`)
 //Найти арифметическое среднее элементов числового массива
 const arr = [1,1,1,1];
 let sumArr = 0;
@@ -29,6 +29,5 @@ function rgb(red = 0, green = 0, blue = 0) {
 }
 console.log(rgb(12,34,255));
 console.log(rgb());
-
 
 //Задание 3

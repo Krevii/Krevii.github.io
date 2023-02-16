@@ -30,25 +30,17 @@
         <section class="blog">
             <div class="overlay">
                 <div class="form">
-                    <form method="post" action="./laba.js" autocomplete="off">
-                        <input name="login" autofocus required placeholder="login">
-                        <input type="password" name="password" required placeholder="password">
-                        <label class="text-h3">some check</label>
-                        <input type="checkbox" value="some check value1" name="some-name">
-                        <label class="text-h3">some check</label>
-                        <input type="checkbox" value="some check value2" name="some-name">
-                        <label class="text-h3">some check</label>
-                        <input type="checkbox" value="some check value3" name="some-name">
+                    <form method="post" action="./laba.js" >
+                        <input id="text-input" name="login" autocomplete="on" autofocus required placeholder="E-mail">
+                        <input type="password" autocomplete="on" name="password" required placeholder="password">
 
                         <input type="submit" value="Войти">
-                        <input type="reset" value="Удалить">
                     </form>
 
                     <form method="post" action="./laba.js" autocomplete="off">
                         <label class="text-h2">Введите ваше предложение по улучению игры</label>
                         <textarea name="offer" placeholder="Не более 200 символов" maxlength="200" cols="100" rows="10"></textarea>
                         <input type="submit" value="Отправить">
-                        <input type="reset" value="Удалить"> 
                     </form>
                 </div>
 
@@ -58,6 +50,8 @@
     <footer>
 
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="./validation.js"></script>
 </body>
 
 </html>
