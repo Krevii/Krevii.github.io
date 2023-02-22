@@ -1,31 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VirtUPS</title>
-    <link href="./style.css" rel="stylesheet" />
-    <link href="./resources/favicon.png" rel="icon" />
-    <link href="./Assets/image/favicon.png">
-</head>
-<body>
-    <header id="header">
-        <div class="bone">
-            <div>
-                <a href="./index.html">
-                    <img class="logoV" src="./resources/Logo-Vertical.png" alt="logo"/>
-                </a>
-            </div>
-
-            <nav>
-                <a href="./index.html#content" class="nav-item">[ about game ]</a>
-                <a href="./index.html#roadmap" class="nav-item">[ roadmap ]</a>
-                <a href="./laba.html" class="nav-item">[ market place ]</a>
-                <a href="./blog.html" class="nav-item">[ blog ]</a>
-            </nav>
-        </div>
-    </header>
-    <main>
+<main>
         <section class="main-content" style="--height-main-content:300">
             <div class="sticky-content">
                 <div class="scroll-background"></div>
@@ -147,9 +120,3 @@
             </div>
         </section>
     </main>
-    <footer id="footer">
-        <h1 class="intro-header">Все :(</h1>
-    </footer>
-    <script src="./scripts.js"></script>
-</body>
-</html>
