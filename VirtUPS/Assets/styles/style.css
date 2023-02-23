@@ -562,7 +562,11 @@ input[type="submit"]{
     color: var(--text-color);
     outline: none;
     text-transform: uppercase;
-
+    border: none;
+    transition: all 0.4s ease;
+}
+input[type="submit"]:hover{
+    background-color: #e0c58d;
 }
 input::placeholder{
     color: var(--secondary-color)   ;
