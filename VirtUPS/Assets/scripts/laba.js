@@ -12,8 +12,8 @@ function weekday(year, month, day) {
 	return (day + 31 * month / 12 + year + year / 4 - year / 100 + year / 400) % 7;
 }
 
-//let result = prompt("Введиие дату в формате:Год/Месяц/День").split("/");
-//alert(`день недели: ${Math.trunc(weekday(result[0],result[1],result[2]))}`)
+let result = prompt("Введиие дату в формате:Год/Месяц/День").split("/");
+alert(`день недели: ${Math.trunc(weekday(result[0],result[1],result[2]))}`)
 //Найти арифметическое среднее элементов числового массива
 const arr = [1,1,1,1];
 let sumArr = 0;
