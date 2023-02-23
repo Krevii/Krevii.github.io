@@ -9,10 +9,15 @@
 </head>
 <body>
     <?php
-        include("header.php")
-        include("main.php")
-        include("footer.php")
+        include("header.php");
+    ?>
+    <?php
+        include("main.php");
+    ?>
+    <?php
+        include("footer.php");
     ?>
 </body>
-<script src="./scripts.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="./Assets/scripts/scripts.js"></script>
 </html>

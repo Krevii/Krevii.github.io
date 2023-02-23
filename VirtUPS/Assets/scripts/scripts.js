@@ -90,6 +90,31 @@ function GetScrollDirection(scrollYPos){
     return direction; 
 }
 
+// $(".line-root").hover(function () {
+//         $(".line-menu:nth-child(odd)").first().css({"transform":"rotate(45deg)", "top":"+=7.5px"});
+//         $(".line-menu:nth-child(odd)").last().css({"transform":"rotate(135deg)", "top":"-=7.5px"});
+//         $(".line-menu:nth-child(even)").css("opacity","0");
+//     }, function () {
+//         $(".line-menu").css({"transform":"rotate(0deg)", "opacity": "1", "top":"0px"});
+//     }
+// );
+let toggle = true;
+$(".line-root").click(function(){
+    if (toggle){
+        $(".line-menu:nth-child(odd)").first().css({"transform":"rotate(45deg)", "top":"+=7.5px"});
+        $(".line-menu:nth-child(odd)").last().css({"transform":"rotate(135deg)", "top":"-=7.5px"});
+        $(".line-menu:nth-child(even)").css("opacity","0");
+
+        $(".select-menu").css({"transform":"scale(1)", "opacity":"1"})
+        toggle = !toggle
+    }
+    else{
+        $(".line-menu").css({"transform":"rotate(0deg)", "opacity": "1", "top":"0px"});
+        $(".select-menu").css({"transform":"scale(0)", "opacity":"0"})
+        toggle = !toggle
+    }
+})
+
 animationScroll();
 onScroll();
 let table = document.getElementsByClassName("table");

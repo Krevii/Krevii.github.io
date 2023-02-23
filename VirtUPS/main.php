@@ -61,58 +61,58 @@
                         <div class="line">
                             <p>Start</p>
                             <div class="line-up">
-                                <img src="./resources/transparent.webp" alt="s">
+                                <img src="./Assets/image/transparent.webp" alt="s">
                             </div>
                         </div>
-                        <img src="./resources/sticker-yes.png" alt="s">
+                        <img src="./Assets/image/sticker-yes.png" alt="s">
                         <span>step 1</span>
                     </div>
                     <div class="intro-header text-content-head slider-content">
                         <div class="line">
                             <p>Incubation Models</p>
-                            <div class="line-up"><img src="./resources/transparent.webp" alt="s"></div>
+                            <div class="line-up"><img src="./Assets/image/transparent.webp" alt="s"></div>
                         </div>
-                        <img src="./resources/sticker-yes.png" alt="s">
+                        <img src="./Assets/image/sticker-yes.png" alt="s">
                         <span>step 2</span>
                     </div>
                     <div class="intro-header text-content-head slider-content">
                         <div class="line">
                             <p>Target Group</p>
-                            <div class="line-up"><img src="./resources/transparent.webp" alt="s"></div>
+                            <div class="line-up"><img src="./Assets/image/transparent.webp" alt="s"></div>
                         </div>
-                        <img src="./resources/sticker-yes.png" alt="s">
+                        <img src="./Assets/image/sticker-yes.png" alt="s">
                         <span>step 3</span>
                     </div>
                     <div class="intro-header text-content-head slider-content">
                         <div class="line">
                             <p>Programme Design</p>
-                            <div class="line-up"><img src="./resources/transparent.webp" alt="s"></div>
+                            <div class="line-up"><img src="./Assets/image/transparent.webp" alt="s"></div>
                         </div>
-                        <img src="./resources/sticker-yes.png" alt="s">
+                        <img src="./Assets/image/sticker-yes.png" alt="s">
                         <span>step 4</span>
                     </div>
                     <div class="intro-header text-content-head slider-content">
                         <div class="line">
                             <p>Financing</p>
-                            <div class="line-up"><img src="./resources/transparent.webp" alt="s"></div>
+                            <div class="line-up"><img src="./Assets/image/transparent.webp" alt="s"></div>
                         </div>
-                        <img src="./resources/sticker-yes.png" alt="s">
+                        <img src="./Assets/image/sticker-yes.png" alt="s">
                         <span>step 5</span>
                     </div>
                     <div class="intro-header text-content-head slider-content">
                         <div class="line">
                             <p>Support</p>
-                            <div class="line-up"><img src="./resources/transparent.webp" alt="s"></div>
+                            <div class="line-up"><img src="./Assets/image/transparent.webp" alt="s"></div>
                         </div>
-                        <img src="./resources/sticker-no.png" alt="s">
+                        <img src="./Assets/image/sticker-no.png" alt="s">
                         <span>step 6</span>
                     </div>
                     <div class="intro-header text-content-head slider-content">
                         <div class="line">
                             <p>Ecosystem</p>
-                            <div class="line-up"><img src="./resources/transparent.webp" alt="s"></div>
+                            <div class="line-up"><img src="./Assets/image/transparent.webp" alt="s"></div>
                         </div>
-                        <img src="./resources/sticker-no.png" alt="s">
+                        <img src="./Assets/image/sticker-no.png" alt="s">
                         <span>step 7</span>
                     </div>
 

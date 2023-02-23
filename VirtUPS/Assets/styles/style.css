@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    border: none;
     scroll-behavior: smooth;
     text-decoration: none;
 }
@@ -44,9 +45,9 @@ header{
     align-items: center;
     width: 100%;
     height: var(--header);
-    background: linear-gradient(180deg, var(--accent-color) 100.33%, rgba(8, 8, 8, 0) 100%);
+    /* background: linear-gradient(180deg, var(--accent-color) 100.33%, rgba(8, 8, 8, 0) 100%); */
     position: fixed;
-    z-index: 999;
+    z-index: 9999;
     transition: 0.2s ease;
     
 }
@@ -54,12 +55,101 @@ header{
     height: 0px;
     opacity: 0;
 }
+.line-root{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50px;
+    transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.line-root:hover{
+    transform: scale(1.1);
+}
+.line-menu{
+    width: 100%;
+    height: 10px;
+    position: relative;
+    border-bottom: 4px solid var(--secondary-color);
+    transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.select-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    transform: scale(0);
+    opacity: 0;
+    background-color: var(--background-accent-color);
+    /* background-image: url(http://virtups/Assets/image/background.png); */
+    transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.root-nav-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50%;
+    position: relative;
+}
+.menu-block{
+    width: 25vw;
+    height: 15vh;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    border: 4px solid var(--secondary-color);
+    transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.menu-block:hover{
+    transform: scale(1.1);
+}
+.menu-block img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.menu-block img:hover{
+    transform: scale(1.3);
+
+}
+.menu-block a{
+    align-items: center;
+}
+.menu-block-text{
+    position: absolute;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+    width: 100%;
+    height: 100%;
+    color: var(--secondary-color);
+}
+.root-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50%;
+}
 .bone{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 90%;
-    height: auto;
+    height: 100%;
+    position: relative;
 }
 .logoV{
     width: 200px;
@@ -72,18 +162,19 @@ nav{
     height: 100%;
 }
 .nav-item{
-    padding: 10px;
+    padding: 0px;
     color: white;
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Sofia Sans Extra Condensed';
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 5vw;
     font-weight: bold;
     white-space: nowrap;
     text-decoration: none;
-    transition:text-shadow, transform 0.7s ease;
+    transition:all 0.4s ease;
 }
 .nav-item:hover{
-    transform: scale(1.1);
+    transform: translateX(2vw);
+    color: var(--secondary-color);
     text-shadow: 0px 0px 5px var(--secondary-color);
 }
 main{
@@ -104,7 +195,6 @@ main{
     justify-content: center;
     width: 100%;
     height: 100vh;
-    /* background: url(/resources/background.png) repeat; */
     position: sticky;
     top: 0px;
     overflow: hidden;
@@ -117,7 +207,7 @@ main{
     width: 100%;
     height: 200%;
     z-index: 0;
-    background:repeat url(./resources/background.png);
+    background:repeat url(http://virtups/Assets/image/background.png);
     background-color: var(--background-accent-color);
     transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
 }
@@ -361,7 +451,7 @@ footer h1{
     align-items: center;
     width: 100%;
     height: 100vh;
-    background: url(./resources/background.png);
+    background: url(http://virtups/Assets/image/background.png);
     overflow: hidden;
     position: relative;
 }
@@ -425,60 +515,57 @@ td img:hover{
     white-space: nowrap;
     
 }
-.blog{
+.login{
     width: 100%;
     height: 100vh;
-    background: url(./resources/background.png);
-}
-.overlay{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: 9999;
+    overflow: hidden;
+    background: url(http://virtups/Assets/image/background.png);
+
 }
 .form{
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    width: 50%;
-    height: 60vh;
+    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
 }
 form{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
-
-}
-form div{
-    width: 100%;
-    height: 50%;
-}
-input, textarea{
-    width: 50%;
-    height: 10%;
-    outline: none;
-    border: 1px solid var(--text-color);
-    color: var(--text-color);
-    font-weight: bold;
-    padding: 10px;
-    font-size: 1.8vw;
-}
-textarea{
-    resize: none;
-    width: 50%;
-    height: 40%;
+    width: 30%;
 }
 label{
-    text-align: center  ;
+    color: var(--secondary-color);
+    font-size: var(--font-size-h2);
+    font-weight: bold;
+    
+}
+input{
+    width: 100%;
+    height: 5vh;
+    background-color: transparent;
+    font-size: var(--font-size-h3);
+    margin-top: 10px;
+    color: var(--secondary-color);
+    outline: none;
+    
+    border-bottom: 1px solid var(--secondary-color);
+}
+input[type="submit"]{
+    width: 100%;
+    height: 5vh;
+    background-color: var(--secondary-color);
+    font-size: var(--font-size-h3);
+    font-weight: bold;
+    color: var(--text-color);
+    outline: none;
+    text-transform: uppercase;
+
+}
+input::placeholder{
+    color: var(--secondary-color)   ;
 }
 @keyframes animate{
     0%{
