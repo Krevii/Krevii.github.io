@@ -12,7 +12,7 @@ function update() {
         groundScroll[0].style = `transform: translate3d(${0}px,${LastScrollY/5}px,0px);`;
     }
     for (let i = 0; i < hederTextUp.length; i++) {
-        hederTextUp[i].style = `transform: translate3d(${0}px,${(-LastScrollY) + 100}px,0px);`
+        hederTextUp[i].style = `transform: translate3d(${0}px,${(-LastScrollY) + 35}px,0px);`
         
     }
 }
