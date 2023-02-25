@@ -19,6 +19,7 @@
     --font-size-h1: calc(7vw);
     --font-size-h2: calc(3vw);
     --font-size-h3: calc(2vw);
+    --font-size-h4: calc(1vw);
     --header: 100px;
     --footer: 100vh;
 }
@@ -533,7 +534,7 @@ form{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     width: 30%;
 }
 label{
@@ -541,6 +542,19 @@ label{
     font-size: var(--font-size-h2);
     font-weight: bold;
     
+}
+#verify-block{
+    padding: 20px 0px;
+    overflow: hidden;
+}
+#verify-lable{
+    display: inline-block;
+    font-size: var(--font-size-h3);
+    font-weight: 100;
+    /* transform: translateY(200%); */
+}
+.verify-lable-active{
+    animation: verify-text 0.4s ease forwards;
 }
 input{
     width: 100%;
@@ -577,5 +591,13 @@ input::placeholder{
     }
     100%{
         transform: translateX(0%);
+    }
+}
+@keyframes verify-text{
+    0%{
+        transform: translateY(200%);
+    }
+    100%{
+        transform: translateY(0%);
     }
 }
