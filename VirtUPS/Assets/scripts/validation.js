@@ -12,7 +12,7 @@ $("input[type = 'submit']").click(function (e) {
         e.preventDefault();
     }
     else if (!tempalteInput.test($("input[name = 'last-name']").val())){
-        verifyTextName("fast name");
+        verifyTextName("last name");
         e.preventDefault();
     }
     else if (!tempalteEmail.test($("#text-input").val())) {
