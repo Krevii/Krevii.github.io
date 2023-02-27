@@ -16,6 +16,8 @@
     --secondary-color:#e3d4b5;
     --text-color: #472D3C;
     --text-color-second: #e3d4b5;
+    --background-img: url(../image/background.png) repeat;
+    --logo-img: url(../image/Logo-Vertical.png);
     --font-size-h1: calc(7vw);
     --font-size-h2: calc(3vw);
     --font-size-h3: calc(2vw);
@@ -29,6 +31,15 @@ body{
     align-items: center;
     justify-content: space-between;
     max-width: 100vw; 
+}
+body.dark{
+    --background-accent-color:#20262E;  
+    --accent-color: #E96479;
+    --secondary-color:#B6EB7A;
+    --text-color: #20262E;
+    --text-color-second: white;
+    --background-img: url(../image/background-dark.png) repeat;
+    --logo-img: url(../image/Logo-Vertical-dark.png);
 }
 .text-h2{
     font-size: var(--font-size-h2);
@@ -88,9 +99,8 @@ header{
     z-index: -1;
     transform: scale(0);
     opacity: 0;
-    /* background-color: var(--background-accent-color); */
-    background: url(https://cdn.discordapp.com/attachments/992890843851661442/1079031052682665984/eforexly_skulls_seamless_texture_repeating_pattern_trending_on__c66aeb53-b43e-4582-ad84-ef4c468f8c27.png) repeat;
-    /* background-image: url(http://virtups/Assets/image/background.png); */
+    background-color: var(--background-accent-color);
+    background: var(--background-img);
     transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
 }
 .root-nav-item{
@@ -105,9 +115,9 @@ header{
     height: 15vh;
     position: relative;
     overflow: hidden;
-    justify-content: center;
-    align-items: center;
     background-color: var(--accent-color);
+    background: url(../image/background-particle.gif);
+    object-fit: scale-down;
     border-radius: 10px;
     border: 4px solid var(--secondary-color);
     transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
@@ -144,6 +154,43 @@ header{
     flex-direction: column;
     justify-content: space-around;
     height: 50%;
+}
+
+.theme-switch-root{
+    display: flex;
+    position: absolute;
+    top: 1300px;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+    padding: 10px;
+    color: var(--secondary-color);
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    transition: all 0.4s ease;
+}
+.menu-footer{
+    display: flex;
+    position: absolute;
+    top: 85vh;
+    align-items: center;
+    justify-content: end;
+    width: 90%;
+    height: var(--header);
+
+}
+
+.lamp-img{
+    filter: invert();
+    width: 50px;
+    height: auto;
+
+    transition: all 0.4s ease;
+}
+.lamp-img:hover{
+    transform: scale(1.1);
+
 }
 .bone{
     display: flex;
@@ -209,9 +256,10 @@ main{
     width: 100%;
     height: 200%;
     z-index: 0;
-    background:repeat url(../image/background.png);
+    filter: grayscale(1);
+    background: var(--background-img);
     background-color: var(--background-accent-color);
-    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 1.8s cubic-bezier(0.19, 1, 0.22, 1);
 }
 .intro-header{
     
@@ -221,7 +269,7 @@ main{
     font-weight: bold;
     text-transform: uppercase;
     color: var(--text-color-second);
-    text-shadow: 0px 0px 5px var(--text-color-second);
+    /* text-shadow: 0px 0px 5px var(--text-color-second); */
 }
 .text-contain{
     display: flex;
@@ -316,7 +364,7 @@ main{
     justify-content: space-evenly;
     opacity: 1;
     background-color: var(--accent-color);
-    /* background: url(../image/poster_character.png) no-repeat; */
+    /* background: url(../image/poster_for_2d_game_brown_green_character.png); */
     object-fit: contain;
     border-radius: 0px;
     height: 100%;
@@ -457,7 +505,7 @@ footer h1{
     align-items: center;
     width: 100%;
     height: 100vh;
-    background: url(../image/background.png);
+    background: var(--background-img);
     overflow: hidden;
     position: relative;
 }
@@ -525,7 +573,7 @@ td img:hover{
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background: url(../image/background.png);
+    background: var(--background-img);
 
 }
 .form{
@@ -604,5 +652,17 @@ input::placeholder{
     }
     100%{
         transform: translateY(0%);
+    }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    :root{
+        --background-accent-color:#20262E;  
+        --accent-color: #E96479;
+        --secondary-color:#B6EB7A;
+        --text-color: #20262E;
+        --text-color-second: white;
+        --background-img: url(../image/background-dark.png) repeat;
+        --logo-img: url(../image/Logo-Vertical-dark.png);
     }
 }

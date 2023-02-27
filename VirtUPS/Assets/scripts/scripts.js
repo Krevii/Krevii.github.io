@@ -9,7 +9,7 @@ function update() {
     ticking = false;
 
     for (let i = 0; i < groundScroll.length; i++) {
-        groundScroll[0].style = `transform: translate3d(${0}px,${LastScrollY/5}px,0px);`;
+        groundScroll[0].style = `transform: translate3d(${0}px,${LastScrollY/5}px,0px); filter: grayscale(0);`;
     }
     for (let i = 0; i < hederTextUp.length; i++) {
         hederTextUp[i].style = `transform: translate3d(${0}px,${(-LastScrollY) + 35}px,0px);`
@@ -32,6 +32,7 @@ function requestTick() {
 
 
 let cardSection = document.getElementsByClassName("card-section");
+// let cardSection = document.getElementsByClassName("content");
 let textContain = document.getElementsByClassName("text-contain");
 
 let HeaderRoadMap = document.getElementsByClassName("header-roadmap");
@@ -46,6 +47,13 @@ let animationScroll = ()=>{
     if (cardSection[0] !== undefined) {        
         if (animionStartPositon >= (cardSection[0].offsetTop - cardSection[0].offsetHeight)) {
             cardSection[0].classList.add("card-section-active");
+            // console.log(cardSection[0].offsetTop - cardSection[0].offsetHeight);
+            console.log(`animionStartPositon ${animionStartPositon}`);
+            console.log(`offsetTop-offsetHeight ${cardSection[0].offsetTop - cardSection[0].offsetHeight}`);
+            console.log(`offsetTop ${cardSection[0].offsetTop}`);
+            console.log(`offsetHeight ${cardSection[0].offsetHeight}`);
+            console.log(`window.scrollY ${window.scrollY}`);
+            console.log("----------------------------------------------");
         }
         else{
             cardSection[0].classList.remove("card-section-active"); 
@@ -104,17 +112,40 @@ $(".line-root").click(function(){
         $(".line-menu:nth-child(odd)").first().css({"transform":"rotate(45deg)", "top":"+=7.5px"});
         $(".line-menu:nth-child(odd)").last().css({"transform":"rotate(135deg)", "top":"-=7.5px"});
         $(".line-menu:nth-child(even)").css("opacity","0");
-
+        
         $(".select-menu").css({"transform":"scale(1)", "opacity":"1"})
-        toggle = !toggle
+        toggle = !toggle;
     }
     else{
         $(".line-menu").css({"transform":"rotate(0deg)", "opacity": "1", "top":"0px"});
         $(".select-menu").css({"transform":"scale(0)", "opacity":"0"})
-        toggle = !toggle
+        toggle = !toggle;
     }
 })
 
+
+let isToggleTheme = (localStorage.getItem("isToggleTheme") === 'true');
+
+function toggleTheme() {
+    localStorage.setItem("isToggleTheme", isToggleTheme);
+    
+    if (isToggleTheme) {
+        $("body").addClass("dark");
+        isToggleTheme = !isToggleTheme;
+    }
+    else{
+        $("body").removeClass("dark");
+        isToggleTheme = !isToggleTheme;
+    }
+
+}
+
+$(".theme-switch").bind("click", function (e) {
+    toggleTheme();
+    e.preventDefault();    
+});
+
+toggleTheme();
 animationScroll();
 onScroll();
 let table = document.getElementsByClassName("table");
