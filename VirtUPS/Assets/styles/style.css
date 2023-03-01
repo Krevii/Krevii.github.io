@@ -655,7 +655,7 @@ input::placeholder{
     }
 }
 
-@media screen and (prefers-color-scheme: dark) {
+/* @media screen and (prefers-color-scheme: dark) {
     :root{
         --background-accent-color:#20262E;  
         --accent-color: #E96479;
@@ -665,4 +665,4 @@ input::placeholder{
         --background-img: url(../image/background-dark.png) repeat;
         --logo-img: url(../image/Logo-Vertical-dark.png);
     }
-}
+} */
