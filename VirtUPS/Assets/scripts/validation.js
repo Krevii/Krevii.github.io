@@ -1,34 +1,26 @@
-$("body").delegate("input[type = 'submit']","click", function (e) {
-    
-});
+let tempalteEmail = /\w{1,}@\w{1,}\.\w{1,}/i;
+let tempalteInput = /.{1,}/i;
+let tempaltePass = /.{8,}/i;
 
 $("input[type = 'submit']").click(function (e) { 
-    let tempalteEmail = /\w{1,}@\w{1,}\.\w{1,}/i;
-    let tempalteInput = /.{1,}/i;
-    let tempaltePass = /.{8,}/i;
 
     if (!tempalteInput.test($("input[name = 'first-name']").val())){
         verifyTextName("first name");
-        e.preventDefault();
     }
     else if (!tempalteInput.test($("input[name = 'last-name']").val())){
         verifyTextName("last name");
-        e.preventDefault();
     }
     else if (!tempalteEmail.test($("#text-input").val())) {
         verifyTextName("E-mail");
-        e.preventDefault();
     }
     else if (!tempaltePass.test($("input[name='password']").val())) {
         verifyTextName("password");
-        e.preventDefault();
     }
     else{
-        // $("input").css("border-bottom","1px solid var(--secondary-color)");
         $("#verify-lable").html("");
         alert("Вы зарегистрированы")
-        e.preventDefault();
     }
+    e.preventDefault();
 });
 
 function verifyTextName(name) {
