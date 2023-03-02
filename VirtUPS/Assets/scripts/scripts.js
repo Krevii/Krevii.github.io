@@ -48,12 +48,6 @@ let animationScroll = ()=>{
         if (animionStartPositon >= (cardSection[0].offsetTop - cardSection[0].offsetHeight)) {
             cardSection[0].classList.add("card-section-active");
             // console.log(cardSection[0].offsetTop - cardSection[0].offsetHeight);
-            console.log(`animionStartPositon ${animionStartPositon}`);
-            console.log(`offsetTop-offsetHeight ${cardSection[0].offsetTop - cardSection[0].offsetHeight}`);
-            console.log(`offsetTop ${cardSection[0].offsetTop}`);
-            console.log(`offsetHeight ${cardSection[0].offsetHeight}`);
-            console.log(`window.scrollY ${window.scrollY}`);
-            console.log("----------------------------------------------");
         }
         else{
             cardSection[0].classList.remove("card-section-active"); 
