@@ -30,3 +30,4 @@ function verifyTextName(name) {
         $("#verify-lable").removeClass("verify-lable-active");
     })
 }
+
