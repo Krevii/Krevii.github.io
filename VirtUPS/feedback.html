@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>marketplace</title>
+    <title>Feedback</title>
     <link href="./Assets/styles/style.css" rel="stylesheet" />
     <link href="./Assets/image/favicon.png" rel="icon" />
 </head>
@@ -30,7 +30,7 @@
         <div class="select-menu">
             <div class="root-nav-item">
                 <a href="./index.html" class="nav-item">general</a>
-                <a href="./marketplace.html" class="nav-item">market place</a>
+                <a href="./feedback.html" class="nav-item">Feedback</a>
                 <a href="./login.html" class="nav-item">login</a>
                 <a href="./blog.html" class="nav-item">blog</a>
                 
@@ -69,55 +69,36 @@
         </div>
     </header>
     <main>
-        <section class="table-gallery">
-            <div class="ticker" style="--R:305; --T:10;"><div></div></div>
-            <div class="ticker" style="--R:45; --T:90;"><div></div></div>
-            <div class="ticker" style="--R:200; --T:0;"><div></div></div>
-            <table class="table">
-                <caption class="caption-text">Купите <a href="https://ru.wikipedia.org/wiki/NFT"><strong style="color: var(--text-color-second); text-shadow: 0px 0px 5px var(--text-color-second);">[ NFT ]</strong></a> нашей игры</caption>
-                <tr>
-                    <td colspan="2">
-                        <a target="_blank" download href="./Assets/image/sticker-angry.png">
-                            <img src="./Assets/image/sticker-angry.png" alt="img">
-                        </a>
-                     </td>
-                     <td rowspan="2">
-                        <a target="_blank" download href="./Assets/image/sticker-error.png">
-                            <img src="./Assets/image/sticker-error.png" alt="img">
-                        </a>
-                     </td>
-                     <td>
-                        <a target="_blank" download href="./Assets/image/sticker-love.png">
-                            <img src="./Assets/image/sticker-love.png" alt="img">
-                        </a>
-                     </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a target="_blank" download href="./Assets/image/sticker-relaxed.png">
-                            <img src="./Assets/image/sticker-relaxed.png" alt="img">
-                        </a>
-                     </td>
-                     <td>
-                        <a target="_blank" download href="./Assets/image/sticker-sad.png">
-                            <img src="./Assets/image/sticker-sad.png" alt="img">
-                        </a>
-                     </td>
-                     <td>
-                        <a target="_blank" download href="./Assets/image/sticker-shocked.png">
-                            <img src="./Assets/image/sticker-shocked.png" alt="img">
-                        </a>
-                     </td>
-                </tr>
-            </table>
-        </section>
-        <section class="list">
-            <video class="list-video-background" src="./Assets/image/TwoCharacter.mp4" autoplay muted loop></video>
+        <section class="login">
+            <div class="form">
+
+                <!-- <div class="text-contain">
+                    <h2 class="intro-header">JOIN THE ENERGY REVOLUTION</h2>
+                </div> -->
+                <div class="text-contain-active">
+                    <div class="left-line">
+                        <div class="intro-header">let's do</div>
+                        <div class="intro-header">game</div>
+                        <div class="intro-header">better</div>
+
+                    </div>
+                </div>
+                <form method="post" autocomplete="off" action="./laba.js">
+                    <label>TELL US ABOUT YOUR SUGGESTION OR IDEA TO MAKE THE GAME BETTER</label>
+                    <input type="text" name="header-text" autofocus required placeholder="Header text">
+                    <input type="text" name="offer" required placeholder="Offer">
+                    <input type="hidden" name="like" value="0">
+                    <input type="hidden" name="view" value="0">
+                    <input type="submit" value="Send">
+                </form>
+
+            </div>
         </section>
     </main>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="./Assets/scripts/validation.js"></script>
     <script src="./Assets/scripts/scripts.js"></script>
-    <script src="./Assets/scripts/laba.js"></script>
 </body>
 
 </html>

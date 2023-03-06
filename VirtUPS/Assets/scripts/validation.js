@@ -25,7 +25,7 @@ $("input[type = 'submit']").click(function (e) {
 
 function verifyTextName(name) {
     $("#verify-lable").addClass("verify-lable-active");
-    $("#verify-lable").html(`Please verify your [${name}] and try again`);
+    $("#verify-lable").html(`Please verify your ${name} and try again`);
     $("#verify-lable").on("animationend", function(){
         $("#verify-lable").removeClass("verify-lable-active");
     })
