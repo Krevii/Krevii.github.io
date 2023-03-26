@@ -11,25 +11,25 @@
                 </div>
                 <div class="scroll-block">
                     <div class="header-up-text">
-                        <h2 class="text-h2">Более 100 уникальных предметов</h2>
+                        <h2 class="text-h2">Over 100 unique items</h2>
                         <p class="text-h3">
                             Avoid paying taxes, solve plantastic puzzles, harvest crops and battle massive beasts all in a journey to tear down a corrupt vegetable government!
                         </p>
                     </div>
                     <div class="header-up-text">
-                        <h2 class="text-h2">Более 100 уникальных предметов</h2>
+                        <h2 class="text-h2">Randomly generated dungeons</h2>
                         <p class="text-h3">
-                            Avoid paying taxes, solve plantastic puzzles, harvest crops and battle massive beasts all in a journey to tear down a corrupt vegetable government!
+                            equipment and bosses. You will never play the same game twice.
                         </p>
                     </div>
                     <div class="header-up-text">
-                        <h2 class="text-h2">Более 100 уникальных предметов</h2>
+                        <h2 class="text-h2">Over 50 types of opponents</h2>
                         <p class="text-h3">
-                            Avoid paying taxes, solve plantastic puzzles, harvest crops and battle massive beasts all in a journey to tear down a corrupt vegetable government!
+                            each of which can be "special". A "special" opponent is more dangerous, but the treasures for defeating him are more valuable.
                         </p>
                     </div>
                     <div class="header-up-text">
-                        <h2 class="text-h2">Более 100 уникальных предметов</h2>
+                        <h2 class="text-h2">Over 20 bosses</h2>
                         <p class="text-h3">
                             Avoid paying taxes, solve plantastic puzzles, harvest crops and battle massive beasts all in a journey to tear down a corrupt vegetable government!
                         </p>
@@ -39,12 +39,12 @@
         </section>
         <section class="content" id="content">
             <div class="card-section">
-                <div class="ticker" style="--R:340; --T:-10;"><div></div></div>
-                <h2 class="intro-header">[ about game ]</h2>
+                <!-- <div class="ticker" style="--R:340; --T:-10;"><div></div></div> -->
+                <h2 class="intro-header">about game</h2>
                 <p class="text-h2">
-                    Пробудитесь в роли неудержимого воина и сражайтесь в этой сюжетной игре. Столкнитесь с враждующими фракциями в обширной межпланетной системе, создайте арсенал разрушительной огневой мощи, и откройте свой истинный потенциал в огромных открытых мирах этого захватывающего сражения.
+                    Awaken as an unstoppable warrior and fight in this story-driven game. Face warring factions across a vast interplanetary system, build an arsenal of devastating firepower, and unlock your true potential in the vast open worlds of this thrilling battle.
                 </p>
-                <div class="ticker" style="--R:45;--T:100;"><div></div></div>
+                <!-- <div class="ticker" style="--R:45;--T:100;"><div></div></div> -->
             </div>
         </section>
 
